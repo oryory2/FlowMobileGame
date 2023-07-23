@@ -18,7 +18,7 @@ export default function MainScreen({navigation})
 
         <Image style={{width:150, height:150, marginTop:50}}source={{uri: 'https://play-lh.googleusercontent.com/cKgJRbFkjVAm6XkkSILGleGkT317BLLD8erTsrI1vo240a991MGJzbMryBKFG7Zw7tU'}}/>
 
-        <View style={{marginTop:100}}>
+        <View style={{marginTop:60}}>
             <SubTitle text={"Single Player"} handlePress={()=>{navigation.navigate("Single")}}/>
         </View>
 

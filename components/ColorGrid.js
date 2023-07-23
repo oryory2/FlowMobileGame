@@ -5,8 +5,8 @@ import { circleColors } from '../dummy/mockData';
 export default function ColorGrid(props)
  {
 
-  let squareSize = props.boardSize == 8 ? { height:40,width: 40} : props.boardSize == 9 ? { height:36,width: 36} : { height:36,width: 36}
-  let circleSize = props.boardSize == 8 ? { height:30,width: 30} : props.boardSize == 9 ? { height:26,width: 26} : { height:26,width: 26}
+  let squareSize = props.boardSize == 8 ? { height:40,width: 40} : props.boardSize == 9 ? { height:40,width: 40} : { height:36,width: 36}
+  let circleSize = props.boardSize == 8 ? { height:30,width: 30} : props.boardSize == 9 ? { height:30,width: 30} : { height:26,width: 26}
 
   return (
     <Pressable onPress={props.handlePress} style={[styles.mainView, squareSize, props.pick ? {backgroundColor: 'white'} : null]}>

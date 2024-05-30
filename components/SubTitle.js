@@ -7,8 +7,8 @@ export default function SubTitle(props)
 {
 
   return (
-    <Pressable onPress={props.handlePress} style={({pressed}) => [pressed ? (!props.notClick ? styles.pressed : null): null]}>
-      <Text style={styles.text}>{props.text}</Text>
+    <Pressable onPress={props.handlePress} style={({pressed}) => [pressed && !props.isDisabled ? (!props.notClick ? styles.pressed : null): null]}>
+      <Text style={[styles.text, props.isDisabled && {color: 'grey'}]}>{props.text}</Text>
     </Pressable>
   )
 }

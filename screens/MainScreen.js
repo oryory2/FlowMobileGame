@@ -23,11 +23,11 @@ export default function MainScreen({navigation})
         </View>
 
         <View style={{marginTop:30}}>
-            <SubTitle text={"MultiPlayer"} handlePress={()=>{navigation.navigate("MultiPlayer")}}/>
+            <SubTitle text={"MultiPlayer"} isDisabled={true}/>
         </View>
 
         <View style={{marginTop:30}}>
-            <SubTitle text={"Settings"} handlePress={()=>{navigation.navigate("Settings")}}/>
+            <SubTitle text={"Settings"} isDisabled={true}/>
         </View>
 
     </LinearGradient>
